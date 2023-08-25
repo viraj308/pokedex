@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 90%;
+    max-width: 512px;
+    margin: 0 auto;
+}

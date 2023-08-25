@@ -1,0 +1,24 @@
+.card {
+    background-color: lightblue;
+    margin: 0 auto;
+}
+.card-stats  p {
+    font-weight: 500;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.row > p {
+    margin: 0 10px;
+}
+
+.card-heading {
+    text-align: center;
+    margin: 1em 0;
+    text-transform: capitalize;
+}
