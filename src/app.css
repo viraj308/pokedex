@@ -11,6 +11,9 @@ img {
 }
 .container {
     width: 90%;
-    max-width: 512px;
+    max-width: 550px;
     margin: 0 auto;
 }
+/* iframe {
+    display: none;
+} */

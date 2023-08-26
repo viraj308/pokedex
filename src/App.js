@@ -27,10 +27,10 @@ function App() {
   if (loading) return "Loading...";
   return (
     <>
+      <InputForm pokemonSet={setPokemon} />
       <ErrorBoundary>
         <Card dataPokemon={pokemonData} />
       </ErrorBoundary>
-      <InputForm pokemonSet={setPokemon} />
     </>
   );
 }

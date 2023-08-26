@@ -10,15 +10,35 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
+    margin-bottom: 1em;
 }
 .row > p {
     margin: 0 10px;
 }
 
 .card-heading {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 1em 0;
     text-transform: capitalize;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border: 2px solid black;
+    text-align: center;
+    
+}
+.heading-1 {
+    width: 15%;
+}
+.stats {
+    display: inline;
+    font-size: 1rem;
+    margin-left: 0.5em;
 }

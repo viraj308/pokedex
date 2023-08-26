@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Inputform.css";
 
 export default function InputForm({ pokemonSet }) {
   const [fieldValue, setFieldValue] = useState("charizard");
@@ -8,13 +9,14 @@ export default function InputForm({ pokemonSet }) {
     pokemonSet(fieldValue);
   };
   return (
-    <div className="container">
+    <div className="input-form">
       <form id="form" onSubmit={handleSubmit}>
-        <label htmlFor="pokemon-name">Enter the pokemon Name </label>
+        {/*  <label htmlFor="pokemon-name">Enter the pokemon Name </label> */}
         <input
           type="text"
           id="pokemon-name"
-          defaultValue="charizard"
+          className="pokemon-name"
+          defaultValue={fieldValue}
           onChange={(e) => {
             setFieldValue(e.target.value);
           }}
