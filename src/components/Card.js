@@ -47,19 +47,23 @@ export default function Card({ dataPokemon }) {
               <p>Weight: {dataPokemon.weight}</p>
             </div>
             <table>
-              <thead>
-                <th className="heading-1">{dataPokemon.stats[0].stat.name}</th>
-                <th>{dataPokemon.stats[1].stat.name}</th>
-                <th>{dataPokemon.stats[2].stat.name}</th>
-                <th>{dataPokemon.stats[3].stat.name}</th>
-                <th>{dataPokemon.stats[4].stat.name}</th>
-              </thead>
               <tbody>
-                <td>{dataPokemon.stats[0].base_stat}</td>
-                <td>{dataPokemon.stats[1].base_stat}</td>
-                <td>{dataPokemon.stats[2].base_stat}</td>
-                <td>{dataPokemon.stats[3].base_stat}</td>
-                <td>{dataPokemon.stats[4].base_stat}</td>
+                <tr>
+                  <th className="heading-1">
+                    {dataPokemon.stats[0].stat.name}
+                  </th>
+                  <th>{dataPokemon.stats[1].stat.name}</th>
+                  <th>{dataPokemon.stats[2].stat.name}</th>
+                  <th>{dataPokemon.stats[3].stat.name}</th>
+                  <th>{dataPokemon.stats[4].stat.name}</th>
+                </tr>
+                <tr>
+                  <td>{dataPokemon.stats[0].base_stat}</td>
+                  <td>{dataPokemon.stats[1].base_stat}</td>
+                  <td>{dataPokemon.stats[2].base_stat}</td>
+                  <td>{dataPokemon.stats[3].base_stat}</td>
+                  <td>{dataPokemon.stats[4].base_stat}</td>
+                </tr>
               </tbody>
             </table>
           </div>

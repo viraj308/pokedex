@@ -15,6 +15,11 @@ img {
     max-width: 550px;
     margin: 0 auto;
 }
-/* iframe {
+.error-heading {
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+iframe {
     display: none;
-} */
+}

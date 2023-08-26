@@ -5,14 +5,17 @@ import logo from "../icons/pokeball.png";
 export default function InputForm({ pokemonSet, pokemon_name }) {
   const [fieldValue, setFieldValue] = useState(pokemon_name);
 
+  /* const lowercase = (data) => {
+    return data.toLowerCase();
+  }; */
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    pokemonSet(fieldValue);
+    pokemonSet(fieldValue.toLowerCase());
   };
   return (
     <div className="input-form">
       <form id="form" onSubmit={handleSubmit}>
-        {/*  <label htmlFor="pokemon-name">Enter the pokemon Name </label> */}
         <input
           type="text"
           id="pokemon-name"
@@ -22,7 +25,13 @@ export default function InputForm({ pokemonSet, pokemon_name }) {
             setFieldValue(e.target.value);
           }}
         />
-        <input type="image" src={logo} alt="submit" width="33px" />
+        <input
+          className="logo"
+          type="image"
+          src={logo}
+          alt="submit"
+          width="33px"
+        />
       </form>
     </div>
   );

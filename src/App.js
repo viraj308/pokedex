@@ -7,7 +7,7 @@ import InputForm from "./components/InputForm";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
-  const [pokemon, setPokemon] = useState("charizard");
+  const [pokemon, setPokemon] = useState("pikachu");
   const [pokemonData, setPokemonData] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -15,12 +15,13 @@ function App() {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
       .then((response) => {
-        console.log(response.data);
         setPokemonData(response.data);
         setLoading(false);
       })
       .catch((error) => {
         console.log(error);
+        alert("No such pokemon exist");
+        setLoading(false);
       });
   }, [pokemon]);
 

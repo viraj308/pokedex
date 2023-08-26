@@ -17,7 +17,7 @@ class ErrorBoundary extends Component {
 
   render() {
     if (this.state.hasError) {
-      return <h2>No such pokemon exists</h2>;
+      return <h2 className="error-heading">Error found</h2>;
     }
     return this.props.children;
   }
