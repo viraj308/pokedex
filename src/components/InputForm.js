@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Inputform.css";
+import logo from "../icons/pokeball.png";
 
-export default function InputForm({ pokemonSet }) {
-  const [fieldValue, setFieldValue] = useState("charizard");
+export default function InputForm({ pokemonSet, pokemon_name }) {
+  const [fieldValue, setFieldValue] = useState(pokemon_name);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +22,7 @@ export default function InputForm({ pokemonSet }) {
             setFieldValue(e.target.value);
           }}
         />
-        <input type="submit" value="search" />
+        <input type="image" src={logo} alt="submit" width="33px" />
       </form>
     </div>
   );

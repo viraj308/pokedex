@@ -27,7 +27,7 @@ function App() {
   if (loading) return "Loading...";
   return (
     <>
-      <InputForm pokemonSet={setPokemon} />
+      <InputForm pokemonSet={setPokemon} pokemon_name={pokemon} />
       <ErrorBoundary>
         <Card dataPokemon={pokemonData} />
       </ErrorBoundary>
